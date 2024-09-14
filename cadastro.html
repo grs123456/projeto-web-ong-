@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Contato</title>
+</head>
+
+<body>
+    <header style="text-align: center; margin-bottom: 20px;">
+        <div class="logo">
+            <img src="logoN (1).webp" alt="Logo">
+        </div>
+        <nav>
+            <ul style="list-style-type: none; padding: 0;">
+                <li><a href="pet.html">Doação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+        <div style="width: 80%; max-width: 600px; background-color: #f7f7f7; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <main>
+                <div class="pergunta" style="margin-bottom: 20px;">
+                    <h1 style="text-align: center;">Adote um novo amigo</h1>
+                    <p>Para adquirir um novo animal de estimação, é necessário:</p>
+                    <p>1. Capacidade de cuidar: Disponibilidade de tempo, espaço e recursos financeiros.</p>
+                    <p>2. Cuidados veterinários: Manter vacinas em dia e considerar a castração.</p>
+                    <p>3. Compromisso a longo prazo: Cuidar do animal por toda a vida dele.</p>
+                    <p>4. Muito amor e carinho não podem faltar.</p>
+                </div>
+                <form style="display: flex; flex-direction: column;">
+                    <div class="radio" style="margin-bottom: 10px;">
+                        <input type="radio" name="animal" value="Cachorro" required>
+                        <label for="adotar">Cachorro</label>
+                        <input type="radio" name="animal" value="Gato" required>
+                        <label for="adotar2">Gato</label>
+                    </div>
+
+                    <label id="lblNome" for="nome">Nome:</label>
+                    <input type="text" id="txtNome" name="Nome" placeholder="Digite seu nome completo" required style="margin-bottom: 10px; padding: 10px;">
+
+                    <label id="lblEmail" for="email">Email:</label>
+                    <input type="email" id="txtEmail" name="Email" placeholder="Digite seu email" required style="margin-bottom: 10px; padding: 10px;">
+
+                    <label id="lblFone" for="fone">Telefone:</label>
+                    <input type="tel" name="telefone" placeholder="Digite seu telefone" required style="margin-bottom: 10px; padding: 10px;">
+
+                    <label id="lblCPF" for="cpf">CPF:</label>
+                    <input type="text" id="txtcpf" name="cpf" placeholder="Digite seu CPF" required style="margin-bottom: 10px; padding: 10px;">
+
+                    <label id="lblEndereço" for="endereco">Endereço:</label>
+                    <input type="text" id="txtEndereço" name="endereco" placeholder="Digite seu Endereço" required style="margin-bottom: 10px; padding: 10px;">
+
+                    <label id="lblpreferencia" for="preferencia">Preferência de porte? Se sim, selecione uma opção:</label>
+                    <div class="radio2" style="margin-bottom: 20px;">
+                        <input type="radio" name="porte" value="Pequeno">
+                        <label for="pequeno">Pequeno</label>
+                        <input type="radio" name="porte" value="Medio">
+                        <label for="medio">Médio</label>
+                        <input type="radio" name="porte" value="Grande">
+                        <label for="grande">Grande</label>
+                    </div>
+
+                    <button type="submit" id="Enviar" style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Enviar</button>
+                </form>
+
+                <div class="grid" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                    <div class="card" style="width: 30%; background-color: white; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                        <img src="/api/placeholder/250/200" alt="Cachorro filhote" style="width: 100%;">
+                        <div class="card-content" style="text-align: center;">
+                            <h3>Macho | 2 a 6 meses</h3>
+                            <p>sao Paulo/SP</p>
+                            <button class="adopt-button" style="padding: 5px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Quero Adotar</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 30%; background-color: white; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                        <img src="/api/placeholder/250/200" alt="Cachorro adulto" style="width: 100%;">
+                        <div class="card-content" style="text-align: center;">
+                            <h3>Macho | 3 anos</h3>
+                            <p>São Paulo/SP</p>
+                            <button class="adopt-button" style="padding: 5px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Quero Adotar</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 30%; background-color: white; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                        <img src="/api/placeholder/250/200" alt="Gato" style="width: 100%;">
+                        <div class="card-content" style="text-align: center;">
+                            <h3>Macho | 7 a 11 meses</h3>
+                            <p>sao Paulo</p>
+                            <button class="adopt-button" style="padding: 5px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Quero Adotar</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
